@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(mark3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+main{
+    display: flex;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #6A2828;
+    width: 50%;
+}
+.container{
+    order: 2;
+}
+
+.gameName{
+    order: 1;
+    font-family: 'Varela Round', sans-serif;
+}
+.gameName h1{
+    text-align: center;
+    margin: 6% auto;
+    font-size: xx-large;
+    color: white;
+}
+.gameName p{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+#tips{
+    text-align: left;
+    margin: 5% auto 10px 5%;
+    color: white;
+}
+.gameName ul li{
+    margin: auto auto 12px 5%;
+    color: white;
+
+}
+.section2{
+    width: 50%;
+    max-height: 100vh;
+}
+.input{
+    margin-top: 7%;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+}
+#Number{
+    padding: 20px 25px;
+    margin: 10px 25%;
+    border-radius: 10px;
+    border: none;
+}
+#myButton{
+    padding: 10px 25px;
+    margin: 10px 35%;
+    background-color: rgb(50, 182, 205);
+    border: none;
+    border-radius: 10px;
+}
+#help{
+    padding: 10px 25px;
+    margin: 10px 35%;
+}
+.board{
+    border: 1px solid blue;
+    margin-top: 50px;
+    border-bottom: none;
+}
+#tries{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(50, 182, 205);
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+#numOfHelps{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(50, 182, 205);
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+}
+#numberGuessed{
+    margin: 20px 30%;
+    border: 2px solid black;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: none;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+#hiorlow{
+    margin: 20px 30%;
+    border: 2px solid black;
+    border-radius: 0px 0px 20px 20px;
+    border-top: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+}
+#helpYouGet{
+    margin: 40px 30%;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: blue;
+    background-color: green;
+    padding: 5px ;
+}
+#demo{
+    margin: 10px 20%;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color: green;
+}
+#PreviousGuess{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    background-color: rgb(50, 182, 205);
+    margin: 40px 20%;
+    border-radius: 10px;
+}

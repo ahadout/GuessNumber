@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessNumber</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <div class="gameName">
+                <h1>Guess the number</h1>
+                <p>Try to guess a Number between 1 and 100</p>
+                <p>You have 10 attempts.</p>
+                <p id="tips">tips :</p>
+                <ul>
+                    <li>"Your guesse is higher but almost there" means<br>your GUESS is between the RandomNumber and RandomNumber+20 </li>
+                    <li>"Your guesse is lower but almost there" means<br>your GUESS is between the RandomNumber and RandomNumber-20 </li>
+                    <li>Press "Get Help" button to have some help</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section2">
+                <div class="container">
+                    <div class="input">
+                        <input id="Number" type="text" placeholder="enter a number">
+                        <button type="button" id="myButton">GUESS</button>
+                        <button type="button" id="help">Get help</button>
+                    </div>
+                    <div class="board">
+                        <div class="result">
+                            <p id="tries"></p>
+                            <p id="numOfHelps"></p>
+                            <p id="demo"></p>
+                            <p id="numberGuessed"></p>
+                            <p id="hiorlow"></p>
+                            <p id="helpYouGet">Help</p>
+                            <p id="PreviousGuess"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </main>
+</body>
+</html>
