@@ -33,7 +33,7 @@ document.getElementById("myButton").onclick = function(){
         document.getElementById("tries").style.backgroundColor="rgb(50, 182, 205)";
     }
 
-    /*input*/
+    /*input high or low*/
     if((guessedNumber>100)||guessedNumber<1){
         document.getElementById("hiorlow").innerHTML = "the Number is between 1 and 100";
         document.getElementById("hiorlow").style.backgroundColor="red";
