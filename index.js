@@ -1,6 +1,6 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-document.getElementById("demo").innerHTML = "R-" + randomNumber ;
+// document.getElementById("demo").innerHTML = "R-" + randomNumber ;
 let numOfTries = 0;
 document.getElementById("tries").innerHTML = "Try " + numOfTries;
 const PreviousGuess = [];
