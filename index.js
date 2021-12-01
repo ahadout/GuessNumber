@@ -5,6 +5,15 @@ let numOfTries = 0;
 document.getElementById("tries").innerHTML = "Try " + numOfTries;
 const PreviousGuess = [];
 
+/* entre to trigger button */
+var input = document.getElementById("Number");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myButton").click();
+    }
+  });
+
 document.getElementById("myButton").onclick = function(){
 
     var guessedNumber = document.getElementById("Number").value;
