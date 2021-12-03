@@ -1,8 +1,8 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 // document.getElementById("demo").innerHTML = "R-" + randomNumber ;
-let numOfTries = 0;
-document.getElementById("tries").innerHTML = "Try " + numOfTries;
+let numOfTries = 1;
+document.getElementById("tries").innerHTML = "Try " + numOfTries +"/10";
 const PreviousGuess = [];
 
 /* entre to trigger button */
@@ -26,8 +26,8 @@ document.getElementById("myButton").onclick = function(){
 
     /*tentatives compteur*/
     numOfTries+= 1;
-    document.getElementById("tries").innerHTML = "Try " + numOfTries;
-    if((numOfTries==10 || numOfTries>10) && guessedNumber!=randomNumber){
+    document.getElementById("tries").innerHTML = "Try " + numOfTries +"/10";
+    if((numOfTries==11 || numOfTries>11) && guessedNumber!=randomNumber){
         document.getElementById("tries").innerHTML = "game over";
         document.getElementById("tries").style.backgroundColor="red";
         document.getElementById("demo").innerHTML = "The correct number is " + randomNumber ;
@@ -59,7 +59,7 @@ document.getElementById("myButton").onclick = function(){
         document.getElementById("hiorlow").innerHTML = "Too High";
         document.getElementById("hiorlow").style.backgroundColor="red";
     }
-    else if((guessedNumber>randomNumber) && (guessedNumber<=randomNumber+20)){
+    else if((guessedNumber>randomNumber) && (guessedNumber<=randomNumber+10)){
         document.getElementById("hiorlow").innerHTML = "Your guesse is higher but almost there";
         document.getElementById("hiorlow").style.backgroundColor="tomato";
     }
@@ -67,7 +67,7 @@ document.getElementById("myButton").onclick = function(){
         document.getElementById("hiorlow").innerHTML = "Too low";
         document.getElementById("hiorlow").style.backgroundColor="blue";
     }
-    else if ((guessedNumber<randomNumber) && (guessedNumber>=randomNumber-20)){
+    else if ((guessedNumber<randomNumber) && (guessedNumber>=randomNumber-10)){
         document.getElementById("hiorlow").innerHTML = "Your guess is lower but almost there";
         document.getElementById("hiorlow").style.backgroundColor="orange";
     }
@@ -76,19 +76,19 @@ document.getElementById("myButton").onclick = function(){
     }
         /* score */
     if((guessedNumber==randomNumber) && (numOfHelp==0) && (numOfTries <= 2)){
-        document.getElementById("demo").innerHTML = "You win with 5 Stars * * * * * ";
+        document.getElementById("demo").innerHTML = "Score: 5 Stars * * * * * ";
     }
     else if((guessedNumber==randomNumber) && (numOfHelp==0) && (numOfTries > 2)){
-        document.getElementById("demo").innerHTML = "you win with 4 Stars * * * * ";
+        document.getElementById("demo").innerHTML = "Score: 4 Stars * * * * ";
     }
     else if((guessedNumber==randomNumber) && (numOfHelp==1)){
-        document.getElementById("demo").innerHTML = "You win with 3 Stars * * * ";
+        document.getElementById("demo").innerHTML = "Score: 3 Stars * * * ";
     }
     else if((guessedNumber==randomNumber) && (numOfHelp==2)){
-        document.getElementById("demo").innerHTML = ("You win with 2 Stars * * ");
+        document.getElementById("demo").innerHTML = ("Score: 2 Stars * * ");
     }
     else if((guessedNumber==randomNumber) && (numOfHelp>=3)){
-        document.getElementById("demo").innerHTML = ("You win with 1 star * ");
+        document.getElementById("demo").innerHTML = ("Score: 1 star * ");
     }
 }
 /*help button*/
